@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>DepartmentName</key>
+		<string>標準、管理及培訓考試部 ( 標準及認證 )</string>
+		<key>DepartmentPresentation</key>
+		<string>提供多項服務,以促進本澳機構實行優質管理-咨詢服務,國際認證 /認可資助和貸款計劃,資訊發放,標準售賣服務,標準及管理參考資料,專業研討會及課程,優質會。</string>
+		<key>ContactName </key>
+		<string>何麗妍小姐</string>
+		<key>PhoneNumber</key>
+		<string>(853) 8898 0834</string>
+		<key>Phone</key>
+		<string>+85388980834</string>
+	</dict>
+	<dict>
+		<key>DepartmentName</key>
+		<string>標準、管理及培訓考試部 ( 專業發展 )</string>
+		<key>DepartmentPresentation</key>
+		<string>統籌澳門生產力暨科技轉移中心內各科專業考試,提供澳門區內其他專業考試資料,亦作為「國家職業資格考試澳門統籌單位」辦事處。</string>
+		<key>ContactName </key>
+		<string>戴錦源先生</string>
+		<key>PhoneNumber</key>
+		<string>(853) 8898 0860</string>
+		<key>Phone</key>
+		<string>+85388980860</string>
+	</dict>
+	<dict>
+		<key>DepartmentName</key>
+		<string>標準、管理及培訓考試部 ( 培訓協調 )</string>
+		<key>DepartmentPresentation</key>
+		<string>統籌職業及專業培訓課程,包括課程簡介,語言實習室的服務。</string>
+		<key>ContactName </key>
+		<string>機構委託內部培訓課程</string>
+		<key>PhoneNumber</key>
+		<string>(853) 8898 0834</string>
+		<key>Phone</key>
+		<string>+85388980834</string>
+		<key>ContactNamePlus</key>
+		<string>公開課程</string>
+		<key>PhoneNumberPlus</key>
+		<string>(853) 8898 0848</string>
+		<key>PhonePlus</key>
+		<string>+85388980848</string>
+	</dict>
+	<dict>
+		<key>DepartmentName</key>
+		<string>圖書館</string>
+		<key>DepartmentPresentation</key>
+		<string>位于中心總辦事處的圖書館向公眾開放。其資料主要有商業管理,電腦科學,社會科學及應用科學四大類。歡迎大家於辦公時間(星期一 至星期五 9:00-20:00;周六及周日 10:30-17:00)親臨圖書館利用我們的館藏資源。</string>
+		<key>ContactName </key>
+		<string></string>
+		<key>PhoneNumber</key>
+		<string>(853) 8898 0839</string>
+		<key>Phone</key>
+		<string>+85388980839</string>
+	</dict>
+	<dict>
+		<key>DepartmentName</key>
+		<string>對外合作及拓展部</string>
+		<key>DepartmentPresentation</key>
+		<string>為澳門企業提供技術中介及諮詢服務;組織澳門企業參與國內外的科技交流活動;在澳門地區舉辦科技交流活動;鼓勵科技創業。</string>
+		<key>ContactName </key>
+		<string>曾澤瑤先生</string>
+		<key>PhoneNumber</key>
+		<string>(853) 8898 0823</string>
+		<key>Phone</key>
+		<string>+85388980823</string>
+	</dict>
+	<dict>
+		<key>DepartmentName</key>
+		<string>資訊系統及科技部(資訊系統推廣)</string>
+		<key>DepartmentPresentation</key>
+		<string>資訊系統部為中心內部提供資訊技術支援,如網頁的設計及更新、設備的更新及維護等;此外,部門也對外提供技術顧問服務。</string>
+		<key>ContactName </key>
+		<string>林濤先生</string>
+		<key>PhoneNumber</key>
+		<string>(853) 8898 0837</string>
+		<key>Phone</key>
+		<string>+85388980837</string>
+	</dict>
+	<dict>
+		<key>DepartmentName</key>
+		<string>人事及總務部(人事)</string>
+		<key>DepartmentPresentation</key>
+		<string>協助部門主管聘請合適員工處理員工的薪酬,福利等,維持員工的工作操守,處理日常書信往來的程序。</string>
+		<key>ContactName </key>
+		<string>賈利安先生</string>
+		<key>PhoneNumber</key>
+		<string>(853) 8898 0845</string>
+		<key>Phone</key>
+		<string>+85388980845</string>
+	</dict>
+	<dict>
+		<key>DepartmentName</key>
+		<string>人事及總務部(總務)</string>
+		<key>DepartmentPresentation</key>
+		<string>計劃及協調各部門之間的活動/展覽會/研討會,進行中心內部的活動。</string>
+		<key>ContactName </key>
+		<string>施麗娜小姐</string>
+		<key>PhoneNumber</key>
+		<string>(853) 8898 0819</string>
+		<key>Phone</key>
+		<string>+85388980819</string>
+	</dict>
+	<dict>
+		<key>DepartmentName</key>
+		<string>財務部</string>
+		<key>DepartmentPresentation</key>
+		<string>負責中心日常財務、會計及內部資源管理工作。</string>
+		<key>ContactName </key>
+		<string>劉錫賢先生</string>
+		<key>PhoneNumber</key>
+		<string>(853) 8898 0846</string>
+		<key>Phone</key>
+		<string>+85388980846</string>
+	</dict>
+	<dict>
+		<key>DepartmentName</key>
+		<string>綜合協調部</string>
+		<key>DepartmentPresentation</key>
+		<string>協調中心各部門的活動新聞發佈及傳媒溝通工作,以宣傳推廣中心的服務和活動。</string>
+		<key>ContactName </key>
+		<string>黃健清小姐</string>
+		<key>PhoneNumber</key>
+		<string>(853) 8898 0815</string>
+		<key>Phone</key>
+		<string>+85388980815</string>
+	</dict>
+</array>
+</plist>

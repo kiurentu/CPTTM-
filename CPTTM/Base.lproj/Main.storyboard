@@ -1,0 +1,1558 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="X6k-E2-Obr">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--部門資料-->
+        <scene sceneID="4tD-EF-WN8">
+            <objects>
+                <tableViewController id="GMh-Zo-8wv" customClass="DepartmentViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="294" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ckz-jY-iMP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="department_cell" rowHeight="294" id="v6F-ku-2WO" customClass="DepartmentTableViewCell">
+                                <rect key="frame" x="0.0" y="86" width="600" height="226"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v6F-ku-2WO" id="qi7-sQ-w4M">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="226"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fDT-zu-67v">
+                                            <rect key="frame" x="8" y="8" width="584" height="278"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GrayBackgound.png" translatesAutoresizingMaskIntoConstraints="NO" id="2UZ-x9-R0x">
+                                                    <rect key="frame" x="0.0" y="0.0" width="584" height="278"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3rh-jO-TIt">
+                                                    <rect key="frame" x="0.0" y="218" width="584" height="56"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GrayBackgound.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rca-EL-b8P">
+                                                            <rect key="frame" x="0.0" y="0.0" width="584" height="54"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="機構委託內部培訓課程" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMe-Of-q7g">
+                                                            <rect key="frame" x="44" y="0.0" width="73" height="56"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="73" id="TdQ-w4-ZbK"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                            <color key="textColor" red="0.63137254901960782" green="0.63921568627450975" blue="0.64313725490196083" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call.png" translatesAutoresizingMaskIntoConstraints="NO" id="O7Q-tU-ngc">
+                                                            <rect key="frame" x="20" y="20" width="16" height="16"/>
+                                                        </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDB-ek-zBK">
+                                                            <rect key="frame" x="413" y="0.0" width="130" height="56"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="130" id="fUH-kN-ZrG"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                            <inset key="imageEdgeInsets" minX="130" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" title="(853)8898 0834">
+                                                                <color key="titleColor" red="0.0" green="0.64705884459999996" blue="0.54901963470000004" alpha="1" colorSpace="deviceRGB"/>
+                                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="call:" destination="GMh-Zo-8wv" eventType="touchUpInside" id="DrD-YQ-t0y"/>
+                                                            </connections>
+                                                        </button>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="to.png" translatesAutoresizingMaskIntoConstraints="NO" id="8oD-o5-iUA">
+                                                            <rect key="frame" x="543" y="20" width="16" height="16"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="8oD-o5-iUA" secondAttribute="bottom" constant="20" id="7QW-pJ-FPD"/>
+                                                        <constraint firstAttribute="trailing" secondItem="8oD-o5-iUA" secondAttribute="trailing" constant="25" id="B92-fK-o5t"/>
+                                                        <constraint firstAttribute="bottom" secondItem="O7Q-tU-ngc" secondAttribute="bottom" constant="20" id="GOp-XN-X9F"/>
+                                                        <constraint firstItem="8oD-o5-iUA" firstAttribute="top" secondItem="3rh-jO-TIt" secondAttribute="top" constant="20" id="GUc-Jh-MzH"/>
+                                                        <constraint firstItem="8oD-o5-iUA" firstAttribute="leading" secondItem="lDB-ek-zBK" secondAttribute="trailing" id="I5p-jX-dFb"/>
+                                                        <constraint firstItem="lDB-ek-zBK" firstAttribute="top" secondItem="3rh-jO-TIt" secondAttribute="top" id="Jwx-bY-h82"/>
+                                                        <constraint firstAttribute="height" constant="56" id="P36-Ni-PZv"/>
+                                                        <constraint firstItem="Rca-EL-b8P" firstAttribute="top" secondItem="3rh-jO-TIt" secondAttribute="top" id="PQu-2u-HsE"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Rca-EL-b8P" secondAttribute="bottom" constant="2" id="Xxc-zq-qVZ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Rca-EL-b8P" secondAttribute="trailing" id="bjO-4U-prf"/>
+                                                        <constraint firstItem="O7Q-tU-ngc" firstAttribute="leading" secondItem="3rh-jO-TIt" secondAttribute="leading" constant="20" id="e75-8w-AoB"/>
+                                                        <constraint firstItem="wMe-Of-q7g" firstAttribute="top" secondItem="3rh-jO-TIt" secondAttribute="top" id="lWS-gf-La5"/>
+                                                        <constraint firstItem="wMe-Of-q7g" firstAttribute="leading" secondItem="O7Q-tU-ngc" secondAttribute="trailing" constant="8" id="n6p-kZ-Axe"/>
+                                                        <constraint firstItem="O7Q-tU-ngc" firstAttribute="top" secondItem="3rh-jO-TIt" secondAttribute="top" constant="20" id="nwC-Zl-UVg"/>
+                                                        <constraint firstItem="Rca-EL-b8P" firstAttribute="leading" secondItem="3rh-jO-TIt" secondAttribute="leading" id="tKq-60-gUP"/>
+                                                        <constraint firstAttribute="bottom" secondItem="lDB-ek-zBK" secondAttribute="bottom" id="tTo-an-aDo"/>
+                                                        <constraint firstAttribute="bottom" secondItem="wMe-Of-q7g" secondAttribute="bottom" id="yph-S0-rWg"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" restorationIdentifier="plusView" translatesAutoresizingMaskIntoConstraints="NO" id="cwV-8V-DD6">
+                                                    <rect key="frame" x="0.0" y="162" width="584" height="56"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GrayBackgound.png" translatesAutoresizingMaskIntoConstraints="NO" id="d2Z-0t-QdG">
+                                                            <rect key="frame" x="0.0" y="0.0" width="584" height="56"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="機構委託內部培訓課程" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJL-Ny-1HF">
+                                                            <rect key="frame" x="44" y="0.0" width="71" height="56"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="71" id="ldb-YN-68V"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                            <color key="textColor" red="0.67450982329999998" green="0.67450982329999998" blue="0.67450982329999998" alpha="1" colorSpace="deviceRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mrp-Wq-mhn">
+                                                            <rect key="frame" x="20" y="20" width="16" height="16"/>
+                                                        </imageView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfG-c9-WfP">
+                                                            <rect key="frame" x="413" y="0.0" width="130" height="56"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="130" id="0Fj-xb-NSc"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                            <inset key="imageEdgeInsets" minX="130" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <state key="normal" title="(853)8898 0834">
+                                                                <color key="titleColor" red="0.0" green="0.64705884459999996" blue="0.54901963470000004" alpha="1" colorSpace="deviceRGB"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="callPlus:" destination="GMh-Zo-8wv" eventType="touchUpInside" id="HQY-Pp-bcV"/>
+                                                            </connections>
+                                                        </button>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="to.png" translatesAutoresizingMaskIntoConstraints="NO" id="BHa-Sf-hEw">
+                                                            <rect key="frame" x="543" y="20" width="16" height="16"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="d2Z-0t-QdG" firstAttribute="top" secondItem="cwV-8V-DD6" secondAttribute="top" id="3sZ-Nr-KlU"/>
+                                                        <constraint firstItem="xJL-Ny-1HF" firstAttribute="top" secondItem="cwV-8V-DD6" secondAttribute="top" id="42a-k4-OJ3"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Mrp-Wq-mhn" secondAttribute="bottom" constant="20" id="4mP-w3-sCN"/>
+                                                        <constraint firstItem="xJL-Ny-1HF" firstAttribute="leading" secondItem="Mrp-Wq-mhn" secondAttribute="trailing" constant="8" id="8GT-oh-z1f"/>
+                                                        <constraint firstAttribute="bottom" secondItem="xJL-Ny-1HF" secondAttribute="bottom" id="957-Uh-OkK"/>
+                                                        <constraint firstAttribute="bottom" secondItem="BHa-Sf-hEw" secondAttribute="bottom" constant="20" id="J2r-PT-6NN"/>
+                                                        <constraint firstAttribute="bottom" secondItem="SfG-c9-WfP" secondAttribute="bottom" id="MFg-gE-LMl"/>
+                                                        <constraint firstItem="d2Z-0t-QdG" firstAttribute="leading" secondItem="cwV-8V-DD6" secondAttribute="leading" id="Prf-ht-cFe"/>
+                                                        <constraint firstItem="BHa-Sf-hEw" firstAttribute="leading" secondItem="SfG-c9-WfP" secondAttribute="trailing" id="YMn-NV-s4d"/>
+                                                        <constraint firstItem="Mrp-Wq-mhn" firstAttribute="top" secondItem="cwV-8V-DD6" secondAttribute="top" constant="20" id="ahD-fg-dBE"/>
+                                                        <constraint firstItem="xJL-Ny-1HF" firstAttribute="leading" secondItem="Mrp-Wq-mhn" secondAttribute="trailing" constant="8" id="env-WR-ZYx"/>
+                                                        <constraint firstAttribute="trailing" secondItem="BHa-Sf-hEw" secondAttribute="trailing" constant="25" id="fBH-XM-3Pw"/>
+                                                        <constraint firstItem="Mrp-Wq-mhn" firstAttribute="leading" secondItem="cwV-8V-DD6" secondAttribute="leading" constant="20" id="iu0-fa-qx4"/>
+                                                        <constraint firstAttribute="height" constant="56" id="mVB-jf-cbA"/>
+                                                        <constraint firstAttribute="trailing" secondItem="d2Z-0t-QdG" secondAttribute="trailing" id="mdB-bu-gYt"/>
+                                                        <constraint firstAttribute="bottom" secondItem="d2Z-0t-QdG" secondAttribute="bottom" id="nF5-RP-vIr"/>
+                                                        <constraint firstItem="BHa-Sf-hEw" firstAttribute="top" secondItem="cwV-8V-DD6" secondAttribute="top" constant="20" id="u2u-zL-0JY"/>
+                                                        <constraint firstItem="SfG-c9-WfP" firstAttribute="top" secondItem="cwV-8V-DD6" secondAttribute="top" id="wXw-VF-9aG"/>
+                                                    </constraints>
+                                                </view>
+                                                <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="750" verticalHuggingPriority="750" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="544" translatesAutoresizingMaskIntoConstraints="NO" id="mwU-2Y-ZhO" customClass="RWLabel">
+                                                    <rect key="frame" x="20" y="35" width="544" height="127"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓考試部">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" ( ">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準及認證">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" )">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="標準、管理及培訓">
+                                                            <attributes>
+                                                                <font key="NSFont" size="11" name="STHeitiSC-Light"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" text="標準、管理及培訓考試部 ( 標準及認證 )" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="544" translatesAutoresizingMaskIntoConstraints="NO" id="ABD-MQ-JVL" customClass="RWLabel">
+                                                    <rect key="frame" x="20" y="16" width="544" height="18"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="18"/>
+                                                    <color key="textColor" red="0.88627457620000005" green="0.231372565" blue="0.2941176593" alpha="1" colorSpace="deviceRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="2UZ-x9-R0x" firstAttribute="top" secondItem="fDT-zu-67v" secondAttribute="top" id="54U-9R-SK4"/>
+                                                <constraint firstAttribute="bottom" secondItem="3rh-jO-TIt" secondAttribute="bottom" constant="4" id="7yh-Tm-7Zh"/>
+                                                <constraint firstItem="3rh-jO-TIt" firstAttribute="top" secondItem="cwV-8V-DD6" secondAttribute="bottom" id="BaZ-Sw-YCL"/>
+                                                <constraint firstItem="ABD-MQ-JVL" firstAttribute="leading" secondItem="mwU-2Y-ZhO" secondAttribute="leading" id="CTJ-5o-mt4"/>
+                                                <constraint firstItem="3rh-jO-TIt" firstAttribute="leading" secondItem="fDT-zu-67v" secondAttribute="leading" id="DEe-wT-udv"/>
+                                                <constraint firstItem="ABD-MQ-JVL" firstAttribute="top" secondItem="fDT-zu-67v" secondAttribute="top" constant="16" id="Dxz-q5-bnf"/>
+                                                <constraint firstAttribute="trailing" secondItem="ABD-MQ-JVL" secondAttribute="trailing" constant="20" id="F5W-q1-iHv"/>
+                                                <constraint firstItem="2UZ-x9-R0x" firstAttribute="leading" secondItem="fDT-zu-67v" secondAttribute="leading" id="Jvt-p3-kru"/>
+                                                <constraint firstItem="cwV-8V-DD6" firstAttribute="leading" secondItem="fDT-zu-67v" secondAttribute="leading" id="KnO-SM-5kp"/>
+                                                <constraint firstItem="ABD-MQ-JVL" firstAttribute="leading" secondItem="fDT-zu-67v" secondAttribute="leading" constant="20" id="PxN-Ux-M6b"/>
+                                                <constraint firstItem="cwV-8V-DD6" firstAttribute="top" secondItem="mwU-2Y-ZhO" secondAttribute="bottom" id="QQe-9f-q9Z"/>
+                                                <constraint firstAttribute="trailing" secondItem="2UZ-x9-R0x" secondAttribute="trailing" id="bRW-XG-d7m"/>
+                                                <constraint firstAttribute="bottom" secondItem="2UZ-x9-R0x" secondAttribute="bottom" id="eRq-UE-Zyg"/>
+                                                <constraint firstItem="ABD-MQ-JVL" firstAttribute="trailing" secondItem="mwU-2Y-ZhO" secondAttribute="trailing" id="ktc-Q8-Laj"/>
+                                                <constraint firstAttribute="trailing" secondItem="3rh-jO-TIt" secondAttribute="trailing" id="owb-fg-RG2"/>
+                                                <constraint firstAttribute="trailing" secondItem="cwV-8V-DD6" secondAttribute="trailing" id="q14-d6-9Ps"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWith">
+                                                    <integer key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="fDT-zu-67v" firstAttribute="top" secondItem="qi7-sQ-w4M" secondAttribute="top" constant="8" id="DDc-B2-6EG"/>
+                                        <constraint firstAttribute="bottom" secondItem="fDT-zu-67v" secondAttribute="bottom" constant="8" id="QYI-FK-G1e"/>
+                                        <constraint firstItem="fDT-zu-67v" firstAttribute="leading" secondItem="qi7-sQ-w4M" secondAttribute="leading" constant="8" id="UPB-ck-g1c"/>
+                                        <constraint firstAttribute="trailing" secondItem="fDT-zu-67v" secondAttribute="trailing" constant="8" id="zBV-km-LcD"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="contactName" destination="wMe-Of-q7g" id="Q7F-cP-jU0"/>
+                                    <outlet property="contactNamePlus" destination="xJL-Ny-1HF" id="1ah-Bd-gOG"/>
+                                    <outlet property="contactView" destination="cwV-8V-DD6" id="Kef-un-hvk"/>
+                                    <outlet property="departmentName" destination="ABD-MQ-JVL" id="q4h-VX-y45"/>
+                                    <outlet property="departmentPresentation" destination="mwU-2Y-ZhO" id="8QN-9N-KB3"/>
+                                    <outlet property="phoneNumber" destination="lDB-ek-zBK" id="D2r-Qc-z52"/>
+                                    <outlet property="phoneNumberPlus" destination="SfG-c9-WfP" id="c5c-I2-CUh"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="GMh-Zo-8wv" id="56M-pJ-Ykr"/>
+                            <outlet property="delegate" destination="GMh-Zo-8wv" id="xxY-v4-PFn"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="部門資料" id="DeF-ut-d2V"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TZe-eA-5Pl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-469" y="-968"/>
+        </scene>
+        <!--培訓課程-->
+        <scene sceneID="S50-6R-dhv">
+            <objects>
+                <navigationController id="bsy-1a-44Q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="培訓課程" image="Book.png" id="mBL-fK-MqN"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DZ7-Pe-RFG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.66274511810000003" blue="0.61176472900000001" alpha="1" colorSpace="deviceRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jln-E5-3jC" kind="relationship" relationship="rootViewController" id="aQ2-Hy-CsF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ki-dr-xJU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1159" y="-1835"/>
+        </scene>
+        <!--部門介紹-->
+        <scene sceneID="DWr-lW-Cql">
+            <objects>
+                <navigationController id="pKZ-SY-9uR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="部門介紹" image="Home.png" id="RDC-1W-PH0"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bg6-cw-SY5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.66274511810000003" blue="0.61176472900000001" alpha="1" colorSpace="deviceRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GMh-Zo-8wv" kind="relationship" relationship="rootViewController" id="qpr-nJ-ge0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tFi-EL-VGM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1159" y="-1021"/>
+        </scene>
+        <!--辦事處資訊-->
+        <scene sceneID="sjp-wo-i1g">
+            <objects>
+                <tableViewController id="HVh-JZ-fBN" customClass="OfficeTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Aqg-co-kNv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell0" rowHeight="190" id="cQX-hI-upe">
+                                <rect key="frame" x="0.0" y="86" width="600" height="190"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" tableViewCell="cQX-hI-upe" id="t5o-Ie-v2d">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="189.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_main_office.png" translatesAutoresizingMaskIntoConstraints="NO" id="dRt-Pj-33h">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="189"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lgx-UC-cuO">
+                                            <rect key="frame" x="8" y="30" width="315" height="130"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pin.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vgn-hA-iXZ">
+                                                    <rect key="frame" x="128" y="0.0" width="23" height="32"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" tag="1002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="main_office.png" translatesAutoresizingMaskIntoConstraints="NO" id="7D7-91-xX9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1003" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="總辦事處" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhh-vJ-fxA">
+                                                    <rect key="frame" x="159" y="5" width="116" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="澳門新口岸上海街中華" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOW-LU-bze">
+                                                    <rect key="frame" x="128" y="33" width="170" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1005" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="總商會大廈六、七樓" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHj-9i-t6H">
+                                                    <rect key="frame" x="128" y="53" width="170" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1006" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TEL:2878 1313" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrP-EE-fOe">
+                                                    <rect key="frame" x="128" y="72" width="212" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FAX:2878 8233" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7x-jR-OSp">
+                                                    <rect key="frame" x="128" y="91" width="121" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:cpttm@cpttm.org.mo" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHw-Mv-qLm">
+                                                    <rect key="frame" x="128" y="107" width="187" height="23"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="dRt-Pj-33h" secondAttribute="trailing" id="F0n-IC-BaA"/>
+                                        <constraint firstItem="dRt-Pj-33h" firstAttribute="top" secondItem="t5o-Ie-v2d" secondAttribute="top" id="HZQ-7H-T0k"/>
+                                        <constraint firstAttribute="bottom" secondItem="dRt-Pj-33h" secondAttribute="bottom" id="oEg-Fp-4mQ"/>
+                                        <constraint firstItem="dRt-Pj-33h" firstAttribute="leading" secondItem="t5o-Ie-v2d" secondAttribute="leading" id="qce-Yp-ZBW"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" rowHeight="190" id="h3c-LR-m3v">
+                                <rect key="frame" x="0.0" y="276" width="600" height="190"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h3c-LR-m3v" id="doJ-5m-ap2">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="189.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_technical_point.png" translatesAutoresizingMaskIntoConstraints="NO" id="8R3-GL-JdA">
+                                            <rect key="frame" x="-77" y="0.0" width="677" height="189"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AyW-Nr-GTD">
+                                            <rect key="frame" x="7" y="30" width="300" height="120"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="成衣技術匯點" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CA0-IL-b3S">
+                                                    <rect key="frame" x="153" y="4" width="116" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="澳門漁翁街海洋工業大廈" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgf-2H-7w4">
+                                                    <rect key="frame" x="128" y="27" width="170" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="第2期20樓成衣技術匯點" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyc-Us-Mml">
+                                                    <rect key="frame" x="129" y="48" width="170" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TEL:8898 0701 " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coH-pM-KUW">
+                                                    <rect key="frame" x="128" y="68" width="108" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pin.png" translatesAutoresizingMaskIntoConstraints="NO" id="9pf-fp-qX4">
+                                                    <rect key="frame" x="127" y="0.0" width="23" height="32"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FAX:2831 2079" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImM-sU-fU8">
+                                                    <rect key="frame" x="128" y="91" width="117" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="technical_point.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ohx-Zi-CPZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="8R3-GL-JdA" secondAttribute="bottom" id="0f8-sb-tLT"/>
+                                        <constraint firstAttribute="bottom" secondItem="8R3-GL-JdA" secondAttribute="bottom" id="cDZ-no-Zcx"/>
+                                        <constraint firstItem="8R3-GL-JdA" firstAttribute="top" secondItem="doJ-5m-ap2" secondAttribute="top" id="cuT-k5-WHV"/>
+                                        <constraint firstAttribute="trailing" secondItem="8R3-GL-JdA" secondAttribute="trailing" id="lIW-91-c2D"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell2" rowHeight="190" id="r8Z-JR-0AO">
+                                <rect key="frame" x="0.0" y="466" width="600" height="190"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r8Z-JR-0AO" id="cEs-cS-tgc">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="189.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_digital.png" translatesAutoresizingMaskIntoConstraints="NO" id="aWd-GD-qkO">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="189"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OlH-9C-aLM">
+                                            <rect key="frame" x="8" y="30" width="315" height="130"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="數碼匯點" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjq-77-aHo">
+                                                    <rect key="frame" x="156" y="12" width="116" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="digital.png" translatesAutoresizingMaskIntoConstraints="NO" id="5E2-cb-Onb">
+                                                    <rect key="frame" x="3" y="0.0" width="120" height="120"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="澳門馬統領街廠商會大廈3樓" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcK-io-aXl">
+                                                    <rect key="frame" x="124" y="46" width="212" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pin.png" translatesAutoresizingMaskIntoConstraints="NO" id="ha1-kw-qiS">
+                                                    <rect key="frame" x="128" y="8" width="23" height="30"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TEL:8898  0601 " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bW2-D8-Tq0">
+                                                    <rect key="frame" x="124" y="65" width="233" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FAX:2837 3085" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYi-eB-gyE">
+                                                    <rect key="frame" x="124" y="82" width="117" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gza-ji-ZlV">
+                                                    <rect key="frame" x="123" y="99" width="233" height="21"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Email:cpttm2@cpttm.org.mo">
+                                                            <attributes>
+                                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="aWd-GD-qkO" secondAttribute="trailing" id="6bA-iv-1yv"/>
+                                        <constraint firstItem="aWd-GD-qkO" firstAttribute="top" secondItem="cEs-cS-tgc" secondAttribute="top" id="Gif-9K-b7L"/>
+                                        <constraint firstAttribute="bottom" secondItem="aWd-GD-qkO" secondAttribute="bottom" id="bod-zQ-3D8"/>
+                                        <constraint firstItem="aWd-GD-qkO" firstAttribute="leading" secondItem="cEs-cS-tgc" secondAttribute="leading" id="hM7-aB-NHh"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HVh-JZ-fBN" id="bXd-43-dNI"/>
+                            <outlet property="delegate" destination="HVh-JZ-fBN" id="aFl-bk-zoY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="辦事處資訊" id="Ehf-6o-A7R"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="05P-Fe-6Iu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-512" y="-227"/>
+        </scene>
+        <!--辦事處-->
+        <scene sceneID="zd0-xf-xUx">
+            <objects>
+                <navigationController id="Njr-zK-Gle" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="辦事處" image="Pin.png" id="6IJ-PX-bqx"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uk5-nf-gf1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.66274511810000003" blue="0.61176472900000001" alpha="1" colorSpace="deviceRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="HVh-JZ-fBN" kind="relationship" relationship="rootViewController" id="iL0-Yu-ChJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kpZ-ja-rOA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1159" y="-225"/>
+        </scene>
+        <!--最新消息-->
+        <scene sceneID="FgU-6h-EuY">
+            <objects>
+                <tableViewController id="dPF-XF-LsR" customClass="NewsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="700" sectionHeaderHeight="22" sectionFooterHeight="22" id="ZSB-qx-8GV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="news_cell" rowHeight="700" id="c91-Cj-1nN" customClass="NewsTableViewCell">
+                                <rect key="frame" x="0.0" y="86" width="600" height="402"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c91-Cj-1nN" id="pUE-66-3N7">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="401.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" image="11168180_726248024171092_6717528791590100091_n.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DO0-0A-Ce0">
+                                            <rect key="frame" x="15" y="160.5" width="570" height="531"/>
+                                            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" scrollEnabled="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hbv-Kb-4ft">
+                                            <rect key="frame" x="15" y="8" width="570" height="150"/>
+                                            <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <attributedString key="attributedText">
+                                                <fragment>
+                                                    <string key="content">澳門時尚匯演(Macao Fashion Parade)已於7月7日在香港時裝節2016春夏系列中完美落幕，當日共展示6個澳門品牌(MaConsef”、“Auralo Arte” 、“Macon”、“Azalea Ho”、“Dare to Dream”、“Worker Playground”)合共78套澳門原創服飾，包括創意流行服裝、潮流男裝及華麗晚裝。
+</string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="14" name="STHeitiSC-Medium"/>
+                                                        <integer key="NSLigature" value="0"/>
+                                                        <font key="NSOriginalFont" size="14" name="STHeitiSC-Medium"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" defaultTabInterval="33.700000000000003">
+                                                            <tabStops>
+                                                                <textTab alignment="left" location="33.700000762939453"/>
+                                                            </tabStops>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content">表演吸引到眾多觀眾到場支持，座無虛席，場面相當熱鬧，現為大家帶來當日的活動花絮。
+
+香港時裝節2016春夏系列每日展訊
+</string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="14" name="STHeitiSC-Medium"/>
+                                                        <integer key="NSLigature" value="0"/>
+                                                        <font key="NSOriginalFont" size="14" name="STHeitiSC-Medium"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="33.700000000000003">
+                                                            <tabStops>
+                                                                <textTab alignment="left" location="33.700000762939453"/>
+                                                            </tabStops>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="http://hkfashionweekss.hktdc.com/dm/2015/fairdaily/day4.html">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="14" name="STHeitiSC-Medium"/>
+                                                        <integer key="NSLigature" value="0"/>
+                                                        <font key="NSOriginalFont" size="14" name="STHeitiSC-Medium"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" defaultTabInterval="33.700000000000003">
+                                                            <tabStops>
+                                                                <textTab alignment="left" location="33.700000762939453"/>
+                                                            </tabStops>
+                                                        </paragraphStyle>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="c91-Cj-1nN" id="51a-QW-mgQ"/>
+                                            </connections>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="DO0-0A-Ce0" firstAttribute="top" secondItem="Hbv-Kb-4ft" secondAttribute="bottom" constant="2.5" id="8Ob-e1-t6i"/>
+                                        <constraint firstAttribute="trailing" secondItem="DO0-0A-Ce0" secondAttribute="trailing" constant="15" id="BPe-TK-xvK"/>
+                                        <constraint firstAttribute="trailing" secondItem="Hbv-Kb-4ft" secondAttribute="trailing" constant="15" id="NkC-QO-7Em"/>
+                                        <constraint firstAttribute="bottom" secondItem="DO0-0A-Ce0" secondAttribute="bottom" constant="8" id="aGe-m7-djw"/>
+                                        <constraint firstItem="DO0-0A-Ce0" firstAttribute="leading" secondItem="pUE-66-3N7" secondAttribute="leading" constant="15" id="aJR-y3-ZtC"/>
+                                        <constraint firstItem="Hbv-Kb-4ft" firstAttribute="leading" secondItem="pUE-66-3N7" secondAttribute="leading" constant="15" id="f7d-Ms-q7u"/>
+                                        <constraint firstItem="Hbv-Kb-4ft" firstAttribute="top" secondItem="pUE-66-3N7" secondAttribute="top" constant="8" id="foc-Uc-6pm"/>
+                                        <constraint firstItem="DO0-0A-Ce0" firstAttribute="top" secondItem="Hbv-Kb-4ft" secondAttribute="bottom" id="wFW-Kb-zUX"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="wFW-Kb-zUX"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.79389599116161613" green="0.79389599116161613" blue="0.79389599116161613" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="newsMessage" destination="Hbv-Kb-4ft" id="t1o-Xt-Uyy"/>
+                                    <outlet property="newsPicture" destination="DO0-0A-Ce0" id="dFN-ek-pW6"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dPF-XF-LsR" id="rJC-QA-PAJ"/>
+                            <outlet property="delegate" destination="dPF-XF-LsR" id="I1N-rI-3wD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="最新消息" id="9kq-ze-RLI">
+                        <barButtonItem key="rightBarButtonItem" image="Facebook.png" id="Z7t-r0-DTH">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="toFacebookIndex:" destination="dPF-XF-LsR" id="3tn-QR-swB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QKN-oW-XzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-512" y="594"/>
+        </scene>
+        <!--最新消息-->
+        <scene sceneID="J3k-Hi-CfZ">
+            <objects>
+                <navigationController id="Fcb-yP-TaX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="最新消息" image="Ribbon.png" id="fs1-Kc-khm"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h7f-Jp-GQZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.66274511810000003" blue="0.61176472900000001" alpha="1" colorSpace="deviceRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dPF-XF-LsR" kind="relationship" relationship="rootViewController" id="inu-wE-hXa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ERd-e4-CdT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1159" y="588"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="saT-cV-VJS">
+            <objects>
+                <tabBarController extendedLayoutIncludesOpaqueBars="YES" id="X6k-E2-Obr" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="LoA-oM-NKW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.0" green="0.66274511810000003" blue="0.61176472900000001" alpha="1" colorSpace="deviceRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bsy-1a-44Q" kind="relationship" relationship="viewControllers" id="C3h-va-nZY"/>
+                        <segue destination="pKZ-SY-9uR" kind="relationship" relationship="viewControllers" id="nlZ-SO-GMV"/>
+                        <segue destination="Njr-zK-Gle" kind="relationship" relationship="viewControllers" id="cBz-mM-dbh"/>
+                        <segue destination="Fcb-yP-TaX" kind="relationship" relationship="viewControllers" id="xNv-Mh-Wbg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kXj-7v-IHz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2327" y="-1878"/>
+        </scene>
+        <!--課程資訊-->
+        <scene sceneID="9nJ-iM-i38">
+            <objects>
+                <viewController id="jln-E5-3jC" customClass="TrainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xJD-dA-IgE"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZgT-J3-mY2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ThY-To-Lar" customClass="TrainView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="輸入課程名稱或課程表編碼" translatesAutoresizingMaskIntoConstraints="NO" id="Yrh-lN-rlL">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <view tag="90001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="As3-Te-23Y">
+                                <rect key="frame" x="0.0" y="64" width="600" height="480"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSR-nt-BAa">
+                                        <rect key="frame" x="450" y="0.0" width="150" height="150"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="5yf-bg-cE8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="管理" image="Portfolio_default.png">
+                                            <color key="titleColor" red="0.46274513010000001" green="0.46274513010000001" blue="0.46274513010000001" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" title="語言">
+                                            <color key="titleColor" red="0.91372555489999996" green="0.2588235438" blue="0.51372551919999998" alpha="1" colorSpace="deviceRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="語言" image="Portfolio_Highlighted.png">
+                                            <color key="titleColor" red="0.89411771299999998" green="0.26666668059999998" blue="0.52156865600000002" alpha="1" colorSpace="deviceRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QX4-Wd-a3R">
+                                        <rect key="frame" x="300" y="0.0" width="150" height="150"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="epn-Iq-TEO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="語言" image="Globus_default.png">
+                                            <color key="titleColor" red="0.46274513010000001" green="0.46274513010000001" blue="0.46274513010000001" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" red="0.91372555489999996" green="0.2588235438" blue="0.51372551919999998" alpha="1" colorSpace="deviceRGB"/>
+                                        </state>
+                                        <state key="highlighted" image="Globus_Highlighted.png">
+                                            <color key="titleColor" red="0.89411771299999998" green="0.26666668059999998" blue="0.52156865600000002" alpha="1" colorSpace="deviceRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYU-6N-fP9">
+                                        <rect key="frame" x="150" y="0.0" width="150" height="150"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="52A-U3-ZtO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="資訊" image="Atom_default.png">
+                                            <color key="titleColor" red="0.46274513010000001" green="0.46274513010000001" blue="0.46274513010000001" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" red="0.91372555489999996" green="0.2588235438" blue="0.51372551919999998" alpha="1" colorSpace="deviceRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="資訊" image="Atom_Highlighted.png">
+                                            <color key="titleColor" red="0.89411771299999998" green="0.26666668059999998" blue="0.52156865600000002" alpha="1" colorSpace="deviceRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Q8B-SA-rw1">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="Oby-Vc-Hyu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <state key="normal" title="成衣" image="Fir_default.png">
+                                            <color key="titleColor" red="0.46274513010000001" green="0.46274513010000001" blue="0.46274513010000001" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" red="0.91372555489999996" green="0.2588235438" blue="0.51372551919999998" alpha="1" colorSpace="deviceRGB"/>
+                                        </state>
+                                        <state key="highlighted" image="Fir_Highlighted.png">
+                                            <color key="titleColor" red="0.89411771299999998" green="0.26666668059999998" blue="0.52156865600000002" alpha="1" colorSpace="deviceRGB"/>
+                                        </state>
+                                    </button>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="bQI-z9-eDf">
+                                        <rect key="frame" x="0.0" y="256" width="600" height="216"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="458466108.20169502">
+                                            <!--2015-07-13 07:41:48 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F8e-RA-VX9">
+                                        <rect key="frame" x="0.0" y="151" width="600" height="92"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPb-M8-uwc">
+                                                <rect key="frame" x="102" y="0.0" width="498" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="最近更新課程">
+                                                    <color key="titleColor" red="0.21568629149999999" green="0.66274511810000003" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lma-8i-Fyx">
+                                                <rect key="frame" x="102" y="31" width="498" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="近期課程">
+                                                    <color key="titleColor" red="0.21568629149999999" green="0.66274511810000003" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oS-Vo-Otz">
+                                                <rect key="frame" x="102" y="62" width="498" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="費用由低至高排序">
+                                                    <color key="titleColor" red="0.21568629149999999" green="0.66274511810000003" blue="0.60784316059999999" alpha="1" colorSpace="deviceRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MAM-d5-7Mk">
+                                                <rect key="frame" x="0.0" y="0.0" width="102" height="92"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tick.png" translatesAutoresizingMaskIntoConstraints="NO" id="yKk-q2-sbQ">
+                                                        <rect key="frame" x="85" y="7" width="17" height="17"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tick.png" translatesAutoresizingMaskIntoConstraints="NO" id="0xe-GM-vbC">
+                                                        <rect key="frame" x="85" y="38" width="17" height="17"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tick.png" translatesAutoresizingMaskIntoConstraints="NO" id="48Q-Bs-2zB">
+                                                        <rect key="frame" x="85" y="70" width="17" height="17"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="92" id="ETg-zW-Q0c"/>
+                                                    <constraint firstAttribute="width" constant="102" id="Jrd-FV-e0A"/>
+                                                    <constraint firstAttribute="trailing" secondItem="48Q-Bs-2zB" secondAttribute="trailing" id="WG4-4i-dtz"/>
+                                                    <constraint firstItem="yKk-q2-sbQ" firstAttribute="top" secondItem="MAM-d5-7Mk" secondAttribute="top" constant="7" id="kja-cy-ypl"/>
+                                                    <constraint firstAttribute="trailing" secondItem="yKk-q2-sbQ" secondAttribute="trailing" id="sIN-Mf-IAd"/>
+                                                    <constraint firstAttribute="bottom" secondItem="48Q-Bs-2zB" secondAttribute="bottom" constant="5" id="wiX-67-DkI"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="LPb-M8-uwc" firstAttribute="top" secondItem="F8e-RA-VX9" secondAttribute="top" id="6wc-aG-VgB"/>
+                                            <constraint firstItem="MAM-d5-7Mk" firstAttribute="top" secondItem="F8e-RA-VX9" secondAttribute="top" id="7Rd-7G-9QR"/>
+                                            <constraint firstItem="Lma-8i-Fyx" firstAttribute="top" secondItem="LPb-M8-uwc" secondAttribute="bottom" constant="1" id="GeX-9b-IYX"/>
+                                            <constraint firstAttribute="trailing" secondItem="Lma-8i-Fyx" secondAttribute="trailing" id="KDi-PF-oEd"/>
+                                            <constraint firstItem="LPb-M8-uwc" firstAttribute="leading" secondItem="MAM-d5-7Mk" secondAttribute="trailing" id="Ou5-zk-jXC"/>
+                                            <constraint firstAttribute="bottom" secondItem="MAM-d5-7Mk" secondAttribute="bottom" id="Uqs-gV-02S"/>
+                                            <constraint firstAttribute="trailing" secondItem="6oS-Vo-Otz" secondAttribute="trailing" id="Xzj-gP-L8X"/>
+                                            <constraint firstAttribute="trailing" secondItem="LPb-M8-uwc" secondAttribute="trailing" id="Zok-A7-CQd"/>
+                                            <constraint firstItem="6oS-Vo-Otz" firstAttribute="top" secondItem="Lma-8i-Fyx" secondAttribute="bottom" constant="1" id="gxe-8J-XGI"/>
+                                            <constraint firstItem="Lma-8i-Fyx" firstAttribute="leading" secondItem="LPb-M8-uwc" secondAttribute="leading" id="hMY-qG-3xE"/>
+                                            <constraint firstItem="MAM-d5-7Mk" firstAttribute="leading" secondItem="F8e-RA-VX9" secondAttribute="leading" id="heu-KG-l6J"/>
+                                            <constraint firstItem="Lma-8i-Fyx" firstAttribute="leading" secondItem="6oS-Vo-Otz" secondAttribute="leading" id="lrT-0I-2RX"/>
+                                            <constraint firstAttribute="bottom" secondItem="6oS-Vo-Otz" secondAttribute="bottom" id="trH-u2-zQB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="DSR-nt-BAa" firstAttribute="leading" secondItem="QX4-Wd-a3R" secondAttribute="trailing" id="3fv-rg-9oq"/>
+                                    <constraint firstItem="DSR-nt-BAa" firstAttribute="top" secondItem="As3-Te-23Y" secondAttribute="top" id="4OL-BM-0HJ"/>
+                                    <constraint firstItem="F8e-RA-VX9" firstAttribute="top" secondItem="Q8B-SA-rw1" secondAttribute="bottom" constant="1" id="9Iz-15-PDX"/>
+                                    <constraint firstItem="Q8B-SA-rw1" firstAttribute="top" secondItem="As3-Te-23Y" secondAttribute="top" id="BFk-MG-KCM"/>
+                                    <constraint firstItem="uYU-6N-fP9" firstAttribute="leading" secondItem="Q8B-SA-rw1" secondAttribute="trailing" id="Csi-tB-ndc"/>
+                                    <constraint firstItem="uYU-6N-fP9" firstAttribute="width" secondItem="Q8B-SA-rw1" secondAttribute="width" id="DB0-wb-PRq"/>
+                                    <constraint firstItem="Q8B-SA-rw1" firstAttribute="leading" secondItem="As3-Te-23Y" secondAttribute="leading" id="Gax-ZK-zqQ"/>
+                                    <constraint firstItem="QX4-Wd-a3R" firstAttribute="top" secondItem="As3-Te-23Y" secondAttribute="top" id="K7o-o4-kW1"/>
+                                    <constraint firstItem="uYU-6N-fP9" firstAttribute="top" secondItem="As3-Te-23Y" secondAttribute="top" id="M6P-ih-WnG"/>
+                                    <constraint firstItem="bQI-z9-eDf" firstAttribute="top" secondItem="F8e-RA-VX9" secondAttribute="bottom" constant="5" id="MsR-qp-HTn"/>
+                                    <constraint firstAttribute="height" constant="480" id="Se5-1l-vWU"/>
+                                    <constraint firstAttribute="trailing" secondItem="DSR-nt-BAa" secondAttribute="trailing" id="Yvf-fK-z9v"/>
+                                    <constraint firstItem="DSR-nt-BAa" firstAttribute="width" secondItem="uYU-6N-fP9" secondAttribute="width" id="dob-RL-tn1"/>
+                                    <constraint firstAttribute="trailing" secondItem="F8e-RA-VX9" secondAttribute="trailing" id="dws-PB-YbW"/>
+                                    <constraint firstItem="bQI-z9-eDf" firstAttribute="leading" secondItem="As3-Te-23Y" secondAttribute="leading" id="f8I-39-Yxg"/>
+                                    <constraint firstItem="F8e-RA-VX9" firstAttribute="leading" secondItem="As3-Te-23Y" secondAttribute="leading" id="ibj-Zm-pQ9"/>
+                                    <constraint firstAttribute="bottom" secondItem="bQI-z9-eDf" secondAttribute="bottom" id="pxR-wf-3XJ"/>
+                                    <constraint firstItem="uYU-6N-fP9" firstAttribute="width" secondItem="QX4-Wd-a3R" secondAttribute="width" id="sbD-kB-h0H"/>
+                                    <constraint firstItem="QX4-Wd-a3R" firstAttribute="leading" secondItem="uYU-6N-fP9" secondAttribute="trailing" id="xN8-My-b70"/>
+                                    <constraint firstAttribute="trailing" secondItem="bQI-z9-eDf" secondAttribute="trailing" id="xww-he-mjA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="As3-Te-23Y" firstAttribute="leading" secondItem="ThY-To-Lar" secondAttribute="leading" id="ClU-Be-LgS"/>
+                            <constraint firstItem="Yrh-lN-rlL" firstAttribute="top" secondItem="xJD-dA-IgE" secondAttribute="bottom" id="ad0-hR-dwb"/>
+                            <constraint firstItem="Yrh-lN-rlL" firstAttribute="leading" secondItem="ThY-To-Lar" secondAttribute="leading" id="lGi-Bs-Uec"/>
+                            <constraint firstItem="As3-Te-23Y" firstAttribute="top" secondItem="xJD-dA-IgE" secondAttribute="bottom" id="oii-Uk-x8a"/>
+                            <constraint firstAttribute="trailing" secondItem="Yrh-lN-rlL" secondAttribute="trailing" id="qb4-Cq-i0O"/>
+                            <constraint firstAttribute="trailing" secondItem="As3-Te-23Y" secondAttribute="trailing" id="wKG-6l-n5p"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="培训課程" id="O50-CU-OnM"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="課程資訊" id="NJK-7d-UZL">
+                        <barButtonItem key="backBarButtonItem" title="     " id="FDz-kd-MsO"/>
+                        <barButtonItem key="leftBarButtonItem" image="EQ.png" style="done" id="lbr-da-uLL">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="setBtn:" destination="jln-E5-3jC" id="gCt-nZ-HQX"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="Bell.png" id="0OT-M3-zRw">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="d0Z-ms-xwv" kind="show" id="k3z-rg-vaI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="languageButton" destination="QX4-Wd-a3R" id="HAH-za-5R9"/>
+                        <outlet property="manageButton" destination="DSR-nt-BAa" id="4yh-qa-rSX"/>
+                        <outlet property="newsButton" destination="uYU-6N-fP9" id="6Gr-i6-Jz6"/>
+                        <outlet property="searchBar" destination="Yrh-lN-rlL" id="4Lp-aZ-CuI"/>
+                        <outlet property="setView" destination="As3-Te-23Y" id="rO8-XI-6y5"/>
+                        <outlet property="tailoringButton" destination="Q8B-SA-rw1" id="tHw-Uo-QgE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kjw-Sk-tNo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-370" y="-1907"/>
+        </scene>
+        <!--通知設定-->
+        <scene sceneID="hwO-J2-f6n">
+            <objects>
+                <tableViewController id="d0Z-ms-xwv" customClass="NotificationTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="EsS-xE-BHl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.94509810209274292" green="0.94509810209274292" blue="0.94509810209274292" alpha="1" colorSpace="deviceRGB"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    新課程通知" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rLx-PE-rJR">
+                            <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.52941179275512695" green="0.52941179275512695" blue="0.5372549295425415" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    你可以接收到中心新課程公佈的通知." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dqn-Ne-9a5">
+                            <rect key="frame" x="0.0" y="174" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.55294120311737061" green="0.55294120311737061" blue="0.56078433990478516" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="notification_cell" editingAccessoryType="detailDisclosureButton" id="Y0y-gC-9Vu">
+                                <rect key="frame" x="0.0" y="130" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y0y-gC-9Vu" id="zNt-cT-QzZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="鬧鐘" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yqv-6x-2XC">
+                                            <rect key="frame" x="20" y="12" width="34" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Jx-i4-CSt">
+                                            <rect key="frame" x="542" y="7" width="51" height="31"/>
+                                        </switch>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="3Jx-i4-CSt" secondAttribute="trailing" constant="1" id="1Eg-TP-Jmq"/>
+                                        <constraint firstItem="Yqv-6x-2XC" firstAttribute="leading" secondItem="zNt-cT-QzZ" secondAttribute="leadingMargin" constant="12" id="bSj-gE-094"/>
+                                        <constraint firstItem="3Jx-i4-CSt" firstAttribute="top" secondItem="zNt-cT-QzZ" secondAttribute="topMargin" constant="-1" id="hVa-DK-ffS"/>
+                                        <constraint firstItem="3Jx-i4-CSt" firstAttribute="centerY" secondItem="Yqv-6x-2XC" secondAttribute="centerY" id="q6x-Os-wzu"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="d0Z-ms-xwv" id="AkT-nZ-fjl"/>
+                            <outlet property="delegate" destination="d0Z-ms-xwv" id="m0T-eY-MLf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="通知設定" id="A2y-Cv-ZuC"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L8g-pb-VVx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-370" y="-2709"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="11168180_726248024171092_6717528791590100091_n.jpg" width="720" height="531"/>
+        <image name="Atom_Highlighted.png" width="52" height="52"/>
+        <image name="Atom_default.png" width="52" height="52"/>
+        <image name="Bell.png" width="24" height="27"/>
+        <image name="Book.png" width="33" height="29"/>
+        <image name="EQ.png" width="28" height="24"/>
+        <image name="Facebook.png" width="25" height="25"/>
+        <image name="Fir_Highlighted.png" width="52" height="52"/>
+        <image name="Fir_default.png" width="52" height="52"/>
+        <image name="Globus_Highlighted.png" width="52" height="52"/>
+        <image name="Globus_default.png" width="52" height="52"/>
+        <image name="GrayBackgound.png" width="724" height="383"/>
+        <image name="Home.png" width="25" height="30"/>
+        <image name="Pin.png" width="23" height="30"/>
+        <image name="Portfolio_Highlighted.png" width="52" height="52"/>
+        <image name="Portfolio_default.png" width="52" height="52"/>
+        <image name="Ribbon.png" width="23" height="30"/>
+        <image name="Tick.png" width="17" height="17"/>
+        <image name="bg_digital.png" width="677" height="313"/>
+        <image name="bg_main_office.png" width="677" height="313"/>
+        <image name="bg_technical_point.png" width="677" height="313"/>
+        <image name="call.png" width="16" height="16"/>
+        <image name="digital.png" width="248" height="249"/>
+        <image name="main_office.png" width="250" height="247"/>
+        <image name="technical_point.png" width="248" height="248"/>
+        <image name="to.png" width="16" height="16"/>
+    </resources>
+    <color key="tintColor" red="0.21568629145622253" green="0.66274511814117432" blue="0.60784316062927246" alpha="1" colorSpace="deviceRGB"/>
+</document>
