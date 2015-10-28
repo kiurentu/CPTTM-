@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>75BC3001-8D69-4F76-AAFD-D4CBFEFF0E08</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CPTTM</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>13056BAD7563646110BD162F059212D2D085EDA5</key>
+		<string>https://github.com/kiurentu/CPTTM-.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CPTTM.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>13056BAD7563646110BD162F059212D2D085EDA5</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kiurentu/CPTTM-.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>13056BAD7563646110BD162F059212D2D085EDA5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>13056BAD7563646110BD162F059212D2D085EDA5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CPTTM%20</string>
+		</dict>
+	</array>
+</dict>
+</plist>
